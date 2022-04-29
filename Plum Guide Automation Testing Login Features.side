@@ -1,0 +1,430 @@
+{
+  "id": "31743ce4-1aee-4b97-937d-2118596b5560",
+  "version": "2.0",
+  "name": "Plum Guide Automation Testing Login In Features",
+  "url": "https://www.plumguide.com",
+  "tests": [{
+    "id": "764b1099-190f-4682-8932-716e9c24f8b1",
+    "name": "Test Case #033 - Blank Login with No Email Address and No Password",
+    "commands": [{
+      "id": "5773bc02-e51b-435f-a7cb-2861273e261a",
+      "comment": "",
+      "command": "//Opens the Plum Guide Website",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1476f6e-70a7-4744-b9c6-b22efff9934b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.plumguide.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f0c4bb3-c07d-4e6f-8390-9bb1843ce876",
+      "comment": "",
+      "command": "//Clicks on the Person Icon on top right of website",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1853d98-da1e-4e38-a3de-560aa743a87f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.c-goqZZF:nth-child(1) > .c-hakyQ-jrNZfK-fixedSize-true",
+      "targets": [
+        ["css=.c-goqZZF:nth-child(1) > .c-hakyQ-jrNZfK-fixedSize-true", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f24f385-d118-4533-a4b9-9a1a9730ecdb",
+      "comment": "",
+      "command": "//Clicks in the email address box, but did not enter a value",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87be039b-d556-4dfa-8a6c-2c39dbb8ab83",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-email",
+      "targets": [
+        ["id=login-email", "id"],
+        ["name=email", "name"],
+        ["css=#login-email", "css:finder"],
+        ["xpath=//input[@id='login-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-email-form-field']/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab05e64b-a439-43de-aca7-5c2e0f9a6866",
+      "comment": "",
+      "command": "//Clicks in the password box, but did not enter a value",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76b8ad99-02ab-4379-acd6-c3496f4edebb",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-password-form-field']/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe4e453a-e51f-4356-b996-6514ea7c4661",
+      "comment": "",
+      "command": "//Clicks Log In button",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab214de8-ad3a-480c-8fda-5cd632101c73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.c-jbArkw:nth-child(5)",
+      "targets": [
+        ["css=.c-jbArkw:nth-child(5)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='login-menu__login']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "636ed4e8-84c6-43a2-a0f4-40205f7e5116",
+      "comment": "",
+      "command": "//Assert text \"Please enter a valid email\" to check if the login was unsuccessful",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1d9162d-b8c7-4ff3-a536-4faad0a641b4",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=login-email__error",
+      "targets": [],
+      "value": "Please enter a valid email"
+    }]
+  }, {
+    "id": "28cc2f03-d6ee-416a-85bf-29db958c55de",
+    "name": "Test Case #034 - Valid Test Email but Password less than 6 characters",
+    "commands": [{
+      "id": "fee30387-bc33-49bc-93d1-a255a730de05",
+      "comment": "",
+      "command": "//Opens the Plum Guide Website",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e236a91-34f3-4d41-8a45-4140dde476d8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.plumguide.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa888f67-8d80-4967-bcac-f1a24e6aea68",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8ffa7ec-33b8-47ca-81bd-e6eb0aa3ba94",
+      "comment": "",
+      "command": "//Clicks on the Person Icon on top right of website",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbfed564-090e-4473-a285-1647653c931d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.c-goqZZF-ilAEQc-css > .c-hakyQ",
+      "targets": [
+        ["css=.c-goqZZF-ilAEQc-css > .c-hakyQ", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "57da1672-b0b9-424b-93c0-1adb0c6706d4",
+      "comment": "",
+      "command": "//Enter email address as plumguide@gmail.com",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7aa0492b-ebb7-434e-aa2d-1f866140d7c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-email",
+      "targets": [
+        ["id=login-email", "id"],
+        ["name=email", "name"],
+        ["css=#login-email", "css:finder"],
+        ["xpath=//input[@id='login-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-email-form-field']/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8ba4cc3-297e-4253-9b3b-5e40f4ccd802",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-email",
+      "targets": [
+        ["id=login-email", "id"],
+        ["name=email", "name"],
+        ["css=#login-email", "css:finder"],
+        ["xpath=//input[@id='login-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-email-form-field']/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "plumguide@gmail.com"
+    }, {
+      "id": "2fa7b350-d46b-49d2-9a19-187e186a9322",
+      "comment": "",
+      "command": "//Enter password as hello",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cbd8119-781b-4489-803f-776def076edc",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-password-form-field']/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "daf48dff-385a-4725-a1fa-b89f2b267cab",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-password-form-field']/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label/input", "xpath:position"]
+      ],
+      "value": "hello"
+    }, {
+      "id": "29142304-508b-4b83-b55f-316abd1b0e01",
+      "comment": "",
+      "command": "//Click Log In button",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b66c3ab2-6d4a-4190-9795-f94e97c86698",
+      "comment": "",
+      "command": "click",
+      "target": "css=.c-jbArkw:nth-child(5)",
+      "targets": [
+        ["css=.c-jbArkw:nth-child(5)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='login-menu__login']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37db9f76-9275-48f2-8c1c-ada4c4b7529f",
+      "comment": "",
+      "command": "//Assert text \"Please  enter a valid password, it must be at least 6 characters long\" to check if login unsuccessful",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a801a55f-38f0-4f97-a5c0-48f156391a5a",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=login-menu__login",
+      "targets": [
+        ["id=login-menu__login", "id"],
+        ["css=#login-menu__login", "css:finder"],
+        ["xpath=//form[@id='login-menu__login']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfaf3284-38dc-4b2b-9c4b-166703b0d690",
+      "comment": "",
+      "command": "//The assert command failed because \"Please enter a valid password... does not match Log In. This means there is a defect because the user is not informed that the password should be longer than 6 characters long.",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bae39683-69f2-4b1b-b046-184cb43f80b8",
+    "name": "Test Case #035 - Invalid Test Email and Password More than 6 Characters",
+    "commands": [{
+      "id": "23f733d7-2351-42c8-beea-9be9fea68699",
+      "comment": "",
+      "command": "//Opens the Plum Guide Website",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c97faa32-f7af-4300-a54f-dff4405d3e01",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.plumguide.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f6cbbf7-345e-4545-b57d-a50207cc4bd8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "340425e6-77b4-4a3f-b50a-684c642edcb9",
+      "comment": "",
+      "command": "//Clicks on the Person Icon on top right of website",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e7ed926-5f1c-4db6-a154-2eb429d18e27",
+      "comment": "",
+      "command": "click",
+      "target": "css=.c-goqZZF-ilAEQc-css use",
+      "targets": [
+        ["css=.c-goqZZF-ilAEQc-css use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce64fdec-863c-40a1-8a75-c17f07eb90eb",
+      "comment": "",
+      "command": "//Enter email address as softwaretesting@yourock.com",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76a0f20d-72bc-4fbd-aa28-0999eb97e299",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-email",
+      "targets": [
+        ["id=login-email", "id"],
+        ["name=email", "name"],
+        ["css=#login-email", "css:finder"],
+        ["xpath=//input[@id='login-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-email-form-field']/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "822c0a94-037e-43db-902d-e3776f5906e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-email",
+      "targets": [
+        ["id=login-email", "id"],
+        ["name=email", "name"],
+        ["css=#login-email", "css:finder"],
+        ["xpath=//input[@id='login-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-email-form-field']/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "softwaretesting@yourock.com"
+    }, {
+      "id": "b455574c-4ae3-4d7d-8a6d-156235cf6b96",
+      "comment": "",
+      "command": "//Enter password as ilovetesting",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92cc5e69-0d42-4653-afd5-04d82b9bc984",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-password-form-field']/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b79b636-0caa-4b50-be33-ac1a6aec35c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-password-form-field']/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label/input", "xpath:position"]
+      ],
+      "value": "ilovetesting"
+    }, {
+      "id": "c621adc2-d9d1-4964-bb75-d6a1330310bc",
+      "comment": "",
+      "command": "//Click Log In button",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edf4b9ca-0630-4c7f-885b-dc76a5703c9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.c-jbArkw:nth-child(5)",
+      "targets": [
+        ["css=.c-jbArkw:nth-child(5)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='login-menu__login']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ced83f6-bcb1-4c4a-862d-f9b1e1431b0e",
+      "comment": "",
+      "command": "//Assert text \" Incorrect email and / or password. Please try again.\" to check if login unsuccessful",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b7122e0-649c-4e3d-bb79-0b0c56a9a7d5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.c-oMqFV",
+      "targets": [
+        ["css=.c-oMqFV", "css:finder"],
+        ["xpath=//form[@id='login-menu__login']/div/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "Incorrect email and / or password. Please try again."
+    }]
+  }],
+  "suites": [{
+    "id": "592bfedc-94c4-425d-9d05-5e36899116d9",
+    "name": "Plum Guide Test Suite for Login Features",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["764b1099-190f-4682-8932-716e9c24f8b1", "28cc2f03-d6ee-416a-85bf-29db958c55de", "bae39683-69f2-4b1b-b046-184cb43f80b8"]
+  }],
+  "urls": ["https://www.plumguide.com/"],
+  "plugins": []
+}
